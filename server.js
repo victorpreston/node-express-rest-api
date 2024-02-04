@@ -82,7 +82,7 @@ app.delete('/products/:id', async(req, res) =>{
 
 mongoose.set("strictQuery", false)
 mongoose.
-connect('Add your connection string/api here')
+connect({/*'Add your connection string/api here'*/})
 .then(() => {
     console.log('connected to MongoDB')
     app.listen(3000, ()=> {
